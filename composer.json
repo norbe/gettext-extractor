@@ -8,8 +8,11 @@
 	"keywords":["gettext", "l10n"],
 	"license": "BSD-3-Clause",
 	"require": {
-		"php": ">=5.2.2",
+		"php": ">=5.3.0",
 		"nikic/php-parser": ">=0.9.2"
+	},
+	"suggest": {
+		"nette/nette": "2.*"
 	},
 	"autoload": {
 		"psr-0": {"GettextExtractor" : ""}
