@@ -1,4 +1,12 @@
 <?php
+/**
+ * GettextExtractor
+ *
+ * This source file is subject to the New BSD License.
+ *
+ * @copyright Copyright (c) 2010 Ondřej Vodáček
+ * @license New BSD License
+ */
 
 /**
  * @author Ondřej Vodáček
