@@ -93,7 +93,8 @@ class GettextExtractor_Filters_NetteLatteFilter extends GettextExtractor_Filters
 			foreach ($this->functions[$name] as $definition) {
 				$message = $this->processFunction($definition, $stmts[0]);
 				if ($message) {
-					$message[GettextExtractor_Extractor::LINE] = $token->line;
+					$line = $token->line - substr_count($token->text, "\n");
+					$message[GettextExtractor_Extractor::LINE] = $line;
 					$data[] = $message;
 				}
 			}
